@@ -93,8 +93,8 @@ const drawer = tv({
 
 interface PopoverContentProps
 	extends Omit<React.ComponentProps<typeof Modal>, "children">,
-		Omit<PopoverPrimitiveProps, "children" | "className">,
-		Omit<ModalOverlayProps, "className"> {
+	Omit<PopoverPrimitiveProps, "children" | "className">,
+	Omit<ModalOverlayProps, "className"> {
 	children: React.ReactNode
 	showArrow?: boolean
 	style?: React.CSSProperties
@@ -104,7 +104,7 @@ interface PopoverContentProps
 	className?: string | ((values: { defaultClassName?: string }) => string)
 }
 
-const PopoverContent = ({
+export const PopoverContent = ({
 	respectScreen = true,
 	children,
 	showArrow = true,

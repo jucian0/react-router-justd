@@ -11,15 +11,17 @@
   "dependencies": {
     "@react-router/node": "^7.3.0",
     "@react-router/serve": "^7.3.0",
+    "embla-carousel-react": "^8.5.2",
+    "input-otp": "^1.4.2",
     "isbot": "^5.1.17",
-    "justd-icons": "^1.10.8",
-    "motion": "^11.15.0",
+    "justd-icons": "^1.10.25",
+    "motion": "^11.18.2",
     "react": "^19.0.0",
     "react-aria": "^3.38.1",
     "react-aria-components": "^1.7.1",
     "react-dom": "^19.0.0",
     "react-router": "^7.3.0",
-    "sonner": "^1.7.1",
+    "sonner": "^1.7.4",
     "tailwind-merge": "^2.6.0",
     "tailwind-variants": "^0.2.1",
     "tailwindcss": "^4.0.14",
@@ -36,5 +38,6 @@
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vite-tsconfig-paths": "^5.1.4"
-  }
+  },
+  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
 }

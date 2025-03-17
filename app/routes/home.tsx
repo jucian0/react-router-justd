@@ -1,5 +1,5 @@
 import type { MetaFunction } from "react-router"
-import { Card, Container, Link } from "ui"
+import { Card, Container, Link, ListBox } from "ui"
 import { Header } from "~/components/header"
 
 export const meta: MetaFunction = () => {
@@ -61,9 +61,29 @@ export default function Index() {
 								</Card.Description>
 							</Card.Header>
 						</Card>
+						<ListboxDemo />
+
 					</div>
 				</div>
 			</Container>
 		</>
 	)
 }
+
+
+
+export function ListboxDemo() {
+	return (
+		<ListBox items={rockPopBands} selectionMode="single" aria-label="Bands">
+			{(item) => <ListBox.Item id={item.id}>{item.name}</ListBox.Item>}
+		</ListBox>
+	)
+}
+
+const rockPopBands = [
+	{ id: "1", name: "Nirvana" },
+	{ id: "2", name: "Radiohead" },
+	{ id: "3", name: "Foo Fighters" },
+	{ id: "4", name: "Arctic Monkeys" },
+	{ id: "5", name: "The Strokes" },
+]
