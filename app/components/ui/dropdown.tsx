@@ -39,10 +39,10 @@ const dropdownItemStyles = tv({
     isFocused: {
       false: "data-danger:text-danger",
       true: [
-        "**:data-[slot=icon]:text-secondary-fg **:[kbd]:text-secondary-fg",
-        "bg-secondary text-secondary-fg forced-colors:bg-[Highlight] forced-colors:text-[HighlightText]",
+        "**:data-[slot=icon]:text-accent-fg **:[kbd]:text-accent-fg",
+        "bg-accent text-accent-fg forced-colors:bg-[Highlight] forced-colors:text-[HighlightText]",
         "data-danger:bg-danger/10 data-danger:text-danger",
-        "data-[slot=description]:text-secondary-fg data-[slot=label]:text-secondary-fg [&_.text-muted-fg]:text-secondary-fg/80",
+        "data-[slot=description]:text-accent-fg data-[slot=label]:text-accent-fg [&_.text-muted-fg]:text-accent-fg/80",
       ],
     },
   },
