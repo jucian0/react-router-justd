@@ -1,3 +1,5 @@
+"use client"
+
 import {
   DateField as DateFieldPrimitive,
   type DateFieldProps as DateFieldPrimitiveProps,

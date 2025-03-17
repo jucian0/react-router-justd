@@ -1,3 +1,5 @@
+"use client"
+
 import { useCallback, useState } from "react"
 
 import type { Key } from "react-aria-components"

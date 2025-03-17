@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react"
 
 import type { SliderProps as SliderPrimitiveProps, SliderThumbProps } from "react-aria-components"

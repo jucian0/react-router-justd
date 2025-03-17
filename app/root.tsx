@@ -13,7 +13,7 @@ import stylesheet from "~/tailwind.css?url"
 
 import type { Route } from "./+types/root";
 import { parseColorScheme } from "./modules/color-scheme/server";
-import { useColorScheme } from "./modules/color-scheme/component";
+import { ColorSchemeScript, useColorScheme } from "./modules/color-scheme/component";
 
 export async function loader({ request }: Route.LoaderArgs) {
 	let colorScheme = await parseColorScheme(request);
@@ -61,6 +61,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<Footer />
 				<ScrollRestoration />
 				<Scripts />
+				<ColorSchemeScript />
 			</body>
 		</html>
 	);

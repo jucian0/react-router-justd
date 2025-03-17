@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 
 import { IconChevronLgDown, IconHamburger } from "justd-icons"
@@ -25,7 +27,7 @@ import {
 } from "react-aria-components"
 import { tv } from "tailwind-variants"
 
-import { composeTailwindRenderProps } from "~/components/ui/primitive"
+import { composeTailwindRenderProps } from "./primitive"
 import { twMerge } from "tailwind-merge"
 import { Checkbox } from "./checkbox"
 

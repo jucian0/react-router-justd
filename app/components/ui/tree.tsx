@@ -1,3 +1,5 @@
+"use client"
+
 import { IconChevronRight } from "justd-icons"
 import type { TreeItemProps, TreeProps } from "react-aria-components"
 import {
@@ -9,7 +11,7 @@ import {
 } from "react-aria-components"
 import { tv } from "tailwind-variants"
 
-import { composeTailwindRenderProps } from "~/components/ui/primitive"
+import { composeTailwindRenderProps } from "./primitive"
 import { twJoin } from "tailwind-merge"
 import { Checkbox } from "./checkbox"
 

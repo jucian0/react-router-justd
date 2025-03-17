@@ -1,3 +1,5 @@
+"use client"
+
 import { IconCircleExclamation } from "justd-icons"
 import { motion } from "motion/react"
 import {

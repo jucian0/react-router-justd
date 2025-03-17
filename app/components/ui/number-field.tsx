@@ -1,3 +1,5 @@
+"use client"
+
 import { IconChevronDown, IconChevronUp, IconMinus, IconPlus } from "justd-icons"
 import {
   Button,

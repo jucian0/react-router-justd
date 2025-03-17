@@ -1,3 +1,5 @@
+"use client"
+
 import type { DateDuration } from "@internationalized/date"
 import { IconCalendarDays } from "justd-icons"
 import {

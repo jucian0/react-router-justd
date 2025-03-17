@@ -1,3 +1,5 @@
+"use client"
+
 import { IconSearch } from "justd-icons"
 import { createContext, use, useEffect } from "react"
 import type {

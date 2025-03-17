@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 
 import { IconChevronLgDown, IconX } from "justd-icons"
@@ -63,7 +65,7 @@ const ComboBox = <T extends object>({
 
 interface ComboBoxListProps<T extends object>
   extends ListBoxProps<T>,
-  Pick<PopoverContentProps, "placement"> {
+    Pick<PopoverContentProps, "placement"> {
   popoverClassName?: PopoverContentProps["className"]
 }
 
@@ -98,7 +100,7 @@ const ComboBoxInput = (props: InputProps) => {
   return (
     <FieldGroup className="relative pl-0">
       <Input {...props} placeholder={props?.placeholder} />
-      <Button size="square-petite" className={chevronButton()}>
+      <Button size="square-petite" intent="plain" className={chevronButton()}>
         {!context?.inputValue && <IconChevronLgDown className={chevronIcon()} />}
       </Button>
       {context?.inputValue && <ComboBoxClearButton />}

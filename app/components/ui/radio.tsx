@@ -1,3 +1,5 @@
+"use client"
+
 import type {
   RadioGroupProps as RadioGroupPrimitiveProps,
   RadioProps as RadioPrimitiveProps,

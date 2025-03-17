@@ -1,3 +1,5 @@
+"use client"
+
 import {
   TimeField as TimeFieldPrimitive,
   type TimeFieldProps as TimeFieldPrimitiveProps,

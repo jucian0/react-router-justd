@@ -1,3 +1,5 @@
+"use client"
+
 import {
   ColorWheel as ColorWheelPrimitive,
   type ColorWheelProps as ColorWheelPrimitiveProps,

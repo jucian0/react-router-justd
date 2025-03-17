@@ -1,3 +1,5 @@
+"use client"
+
 import { clsx } from "clsx"
 import { IconChevronLgDown } from "justd-icons"
 import type {

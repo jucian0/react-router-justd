@@ -1,3 +1,5 @@
+"use client"
+
 import { ProgressBar, type ProgressBarProps } from "react-aria-components"
 import { twMerge } from "tailwind-merge"
 

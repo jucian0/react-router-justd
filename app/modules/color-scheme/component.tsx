@@ -49,6 +49,7 @@ export function ColorSchemeScript() {
         }
 
         let media = window.matchMedia("(prefers-color-scheme: dark)");
+        console.log(media);
         check(media);
 
         media.addEventListener("change", check);

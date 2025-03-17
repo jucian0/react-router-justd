@@ -1,3 +1,5 @@
+"use client"
+
 import { useMediaQuery } from "~/utils/use-media-query"
 import { IconChevronLgDown, IconHamburger, IconSidebarFill } from "justd-icons"
 import { createContext, use, useCallback, useEffect, useMemo, useState } from "react"
@@ -125,7 +127,7 @@ const SidebarProvider = ({
       <div
         className={twMerge(
           "@container **:data-[slot=icon]:shrink-0",
-          "[--sidebar-width-dock:3.25rem] [--sidebar-width-mobile:18rem] [--sidebar-width:17rem]",
+          "[--sidebar-width-dock:3.25rem] [--sidebar-width:17rem]",
           "[--sidebar-border:color-mix(in_oklch,var(--color-sidebar)_25%,black_6%)]",
           "dark:[--sidebar-border:color-mix(in_oklch,var(--color-sidebar)_55%,white_10%)]",
           "[--sidebar-accent:color-mix(in_oklab,var(--color-sidebar)_95%,black_5%)]",
@@ -231,7 +233,7 @@ const Sidebar = ({
           aria-label="Sidebar"
           data-sidebar-intent="default"
           classNames={{
-            content: "w-(--sidebar-width-mobile) [&>button]:hidden",
+            content: "min-w-[22rem] max-w-min [&>button]:hidden",
           }}
           isFloat={intent === "float"}
           side={side}
@@ -412,10 +414,10 @@ interface SidebarItemProps extends Omit<React.ComponentProps<typeof Link>, "chil
   isCurrent?: boolean
   tooltip?: React.ReactNode | string
   children?:
-    | React.ReactNode
-    | ((
-        values: LinkRenderProps & { defaultChildren: React.ReactNode; isCollapsed: boolean },
-      ) => React.ReactNode)
+  | React.ReactNode
+  | ((
+    values: LinkRenderProps & { defaultChildren: React.ReactNode; isCollapsed: boolean },
+  ) => React.ReactNode)
   badge?: string | number | undefined
 }
 

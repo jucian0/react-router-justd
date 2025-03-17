@@ -1,3 +1,5 @@
+"use client"
+
 import type { ColorSwatchPickerItemProps, ColorSwatchPickerProps } from "react-aria-components"
 import {
   ColorSwatchPickerItem as ColorSwatchPickerItemPrimitive,

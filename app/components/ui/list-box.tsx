@@ -1,3 +1,5 @@
+"use client"
+
 import { IconCheck, IconHamburger } from "justd-icons"
 import type {
   ListBoxItemProps as ListBoxItemPrimitiveProps,
@@ -9,10 +11,9 @@ import {
   composeRenderProps,
 } from "react-aria-components"
 
-import { composeTailwindRenderProps } from "~/components/ui/primitive"
+import { composeTailwindRenderProps } from "./primitive"
 import { twMerge } from "tailwind-merge"
-import { DropdownItemDetails, DropdownSection, dropdownItemStyles } from "./dropdown"
-import { Label } from "./field"
+import { DropdownItemDetails, DropdownLabel, DropdownSection, dropdownItemStyles } from "./dropdown"
 
 const ListBox = <T extends object>({ className, ...props }: ListBoxProps<T>) => (
   <ListBoxPrimitive
@@ -55,7 +56,7 @@ const ListBoxItem = <T extends object>({ children, className, ...props }: ListBo
             />
           )}
           {isSelected && <IconCheck className="-mx-0.5 mr-2" data-slot="checked-icon" />}
-          {typeof children === "string" ? <Label>{children}</Label> : children}
+          {typeof children === "string" ? <DropdownLabel>{children}</DropdownLabel> : children}
         </>
       )}
     </ListBoxItemPrimitive>

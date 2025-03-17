@@ -1,3 +1,5 @@
+"use client"
+
 import { IconChevronLeft } from "justd-icons"
 import type {
   DisclosureGroupProps as AccordionProps,

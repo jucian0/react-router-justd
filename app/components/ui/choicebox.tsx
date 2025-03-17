@@ -1,3 +1,5 @@
+"use client"
+
 import type { GridListItemProps, GridListProps } from "react-aria-components"
 import { GridList, GridListItem, composeRenderProps } from "react-aria-components"
 import type { VariantProps } from "tailwind-variants"

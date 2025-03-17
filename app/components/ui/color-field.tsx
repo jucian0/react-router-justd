@@ -1,3 +1,5 @@
+"use client"
+
 import type {
   ColorFieldProps as ColorFieldPrimitiveProps,
   ValidationResult,

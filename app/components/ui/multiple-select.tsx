@@ -1,3 +1,5 @@
+"use client"
+
 import { useCallback, useEffect, useId, useRef, useState } from "react"
 
 import { IconChevronLgDown } from "justd-icons"

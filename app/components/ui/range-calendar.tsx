@@ -1,3 +1,5 @@
+"use client"
+
 import { getLocalTimeZone, today } from "@internationalized/date"
 import type {
   DateValue,

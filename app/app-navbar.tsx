@@ -1,5 +1,5 @@
 import { IconArrowUpRight, IconBrandGithub, IconBrandJustd, IconChevronLgDown } from "justd-icons"
-import { Link, Menu, Navbar, Separator, buttonStyles } from "ui"
+import { Link, Menu, Navbar, Separator, buttonStyles } from './components/ui'
 import { ThemeSwitcher } from "~/components/theme-switcher"
 
 const navigations = [
@@ -57,7 +57,7 @@ export function AppNavbar() {
 				<Navbar.Section className="ml-auto hidden gap-x-1 lg:flex">
 					<ThemeSwitcher />
 					<Link
-						className={buttonStyles({ appearance: "outline", size: "square-petite" })}
+						className={buttonStyles({ intent: 'outline', size: "square-petite" })}
 						href="https://github.com/justdlabs/remix"
 						target="_blank"
 						aria-label="Go to Github Repo"
@@ -65,7 +65,7 @@ export function AppNavbar() {
 						<IconBrandGithub />
 					</Link>
 					<Link
-						className={buttonStyles({ appearance: "outline", size: "square-petite" })}
+						className={buttonStyles({ intent: 'outline', size: "square-petite" })}
 						href="https://getjustd.com"
 						target="_blank"
 						aria-label="Go to Justd"
@@ -86,7 +86,7 @@ export function AppNavbar() {
 				<Navbar.Flex className="gap-x-1">
 					<ThemeSwitcher />
 					<Link
-						className={buttonStyles({ appearance: "outline", size: "square-petite" })}
+						className={buttonStyles({ intent: "outline", size: "square-petite" })}
 						href="https://github.com/justdlabs/remix"
 						target="_blank"
 						aria-label="Go to Github Repo"
@@ -94,7 +94,7 @@ export function AppNavbar() {
 						<IconBrandGithub />
 					</Link>
 					<Link
-						className={buttonStyles({ appearance: "outline", size: "square-petite" })}
+						className={buttonStyles({ intent: "outline", size: "square-petite" })}
 						href="https://getjustd.com"
 						target="_blank"
 						aria-label="Go to Justd"

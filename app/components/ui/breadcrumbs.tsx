@@ -1,3 +1,4 @@
+"use client"
 import { IconChevronLgRight } from "justd-icons"
 import { createContext, use } from "react"
 import type { BreadcrumbProps, BreadcrumbsProps, LinkProps } from "react-aria-components"

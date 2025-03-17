@@ -1,3 +1,5 @@
+"use client"
+
 import { parseColor } from "@react-stately/color"
 import type { ColorSwatchProps } from "react-aria-components"
 import { ColorSwatch as ColorSwatchPrimitive } from "react-aria-components"

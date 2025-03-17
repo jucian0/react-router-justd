@@ -1,3 +1,5 @@
+"use client"
+
 import { type CalendarDate, getLocalTimeZone, today } from "@internationalized/date"
 import { useDateFormatter } from "@react-aria/i18n"
 import type { CalendarState } from "@react-stately/calendar"
